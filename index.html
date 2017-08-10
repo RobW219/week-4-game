@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<script src="http://code.jquery.com/jquery-3.2.1.min.js"
+  	integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  	crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="assets/javascript/game.js"></script>
+
+  	
+
+	<title>CrystalsCollector!</title>
+</head>
+<body>
+
+	<div class="container">
+		<div class="row">
+			<div class="panel panel-default">
+				<div class="panel-body">
+					<h1 class="panel-title">Crystal Collector</h1>
+				</div>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-md-6">
+				<div class="row">
+					<div class="panel-default">
+						<p class="lead">
+							You will be given a random number at the start of the game. There are four crystals below. By clicking on a crystal you will add a specific amount of points to your total score.
+						</p>
+							
+						<p class="lead">
+							You win the game by matching your total score to random number, you lose the game if your total score goes above the random number.
+						</p>
+						<p class="lead">
+							The value of each crystal is hidden from you until you click on it. Each time when the game starts, the game will change the values of each crystal.
+						</p>
+					</div>
+				</div>
+			</div>
+				
+			<div class="col-md-6">
+				<div class="panel-default">
+					<div class="row">
+						<p id="randomNumber">1000</p>
+					</div>
+					
+					<div class="row">
+						<p id="playerNumber">1000</p>
+					</div>
+
+				</div>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-md-6">
+				<div class="col-md-6">
+					<div class="panel-default">
+						<div class="panel-header">
+							<h1 id="wins">WINS</h1>
+						</div>
+
+						<div id="winNumber">0</div>
+					</div>
+				</div>
+
+				<div class="col-md-6">
+					<div class="panel-default">
+						<div class="panel-header">
+							<h1 id="losses">LOSSES</h1>
+						</div>
+						<div id="lossNumber">0</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-md-6">
+				<img src="assets/images/Crystal_multi_skill.png" class="rounded center-block" id="crys1" alt="Crys1">
+				<img src="assets/images/Crystal_electro.png" class="rounded center-block" id="crys2" alt="Crys2">
+				<img src="assets/images/Crystal_multi_mutant.png" class="rounded center-block" id="crys3" alt="Crys3">
+				<img src="assets/images/Crystal_weekly_event.png" class="rounded center-block" id="crys4" alt="Crys4">
+			</div>
+		</div>
+	</div>
+
+</body>
+</html>
