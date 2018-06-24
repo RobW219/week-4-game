@@ -45,12 +45,8 @@ p {
 	font-size: 20pt;
 }
 
-img:hover, 
-img:focus {
-  animation: pulse 1s;
-  box-shadow: 0 0 0 2em rgba(#fff,0);
-}
-
-@keyframes pulse {
-  0% { box-shadow: 0 0 0 0 var(--hover); }
+img:hover {
+	-moz-box-shadow: 0 0 10px #ccc;
+	-webkit-box-shadow: 0 0 10px #ccc;
+	 box-shadow: 0 0 10px #ccc;
 }
